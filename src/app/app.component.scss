@@ -23,7 +23,6 @@ body {
 
 nav {
     padding: 20px 0 40px 0;
-    background: #F8F8F8;
     font-size: 16px;
     .navbar-left {
         float: left;
@@ -32,21 +31,17 @@ nav {
         float: right;
     }
     ul {
+        padding-left: 1rem;
         li {
             display: inline;
-            padding-left: 20px;
+            padding-right: 1rem;
             a {
-                color: #777777;
+                color: #FFFFFF;
                 text-decoration: none;
                 &:hover {
-                    color: black;
+                    color: #FFFFFF;
                 }
             }
         }
     }
-}
-
-.container {
-    margin: auto;
-    width: 80%;
 }

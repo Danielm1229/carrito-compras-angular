@@ -12,4 +12,9 @@ export class AppComponent {
   public cart() { //Se usa para abrir o cerrar el carrito
     this.openCart = !this.openCart;
   }
+
+  public openCheckout: boolean = false;
+  public checkOut() { //Se usa para abrir o cerrar el carrito
+    this.openCheckout = !this.openCheckout;
+  }
 }
