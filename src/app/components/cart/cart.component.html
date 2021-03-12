@@ -8,7 +8,7 @@
             </div>
         </div>
         <!--end shopping-cart-header -->
-        <ul class="shopping-cart-items">
+        <ul class="shopping-cart-items overflow-auto">
             <li class="clearfix" *ngFor="let item of items">
                 <img [src]="item.img" alt="item1" />
                 <span class="item-name">{{item.name}}</span>
@@ -17,8 +17,9 @@
                 <button type="button" class="btn btn-danger ml-4" (click)="remove(item)">Remove</button>
             </li>
         </ul>
-        <a href="#" class="button">Checkout</a>
+        <a routerLink="/checkout" routerLinkActive="active" class="button">Checkout</a>
     </div>
     <!--end shopping-cart -->
 </div>
 <!--end container -->
+<router-outlet></router-outlet>
